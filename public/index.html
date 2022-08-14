@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jungle Run</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito+Sans&family=Poppins&family=Press+Start+2P&family=Rubik+Moonrocks&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css " />
+    </head>
+    <body>
+        <div class="start-menu">
+            <div>
+                <h1 class="start-menu__title">JUNGLE RUNNER</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a id="start-menu__play" href="#">PLAY</a></li>
+                    <li>
+                        <a id="start-menu__description" href="#">Game Description</a>
+                    </li>
+                    <li>
+                        <a id="start-menu__controls" href="#">Game Controls</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="game-tutorial hide">
+            <h1 class="game-tutorial__title">WIN AND LOSE CONDIIONS</h1>
+            <ul class="game-tutorial__desc">
+                <li>
+                    There are multiple types of ghosts roaming around the haunted city.
+                </li>
+                <li>
+                    Players have to kill the required number of ghosts to win the game.
+                </li>
+                <li>Players can kill the ghosts using superpower.</li>
+                <li>Characters energy will decrease as the player use superpower.</li>
+                <li>Characters energy will automatically increase overtime.</li>
+                <li>Timer will increase on killing a certain type of ghost</li>
+                <li>
+                    Characters life will decrease when colliding with enemies without
+                    using superpower.
+                </li>
+                <li>
+                    If the player score is greater than the target score, player wins.
+                </li>
+                <li>If the player score is less than the target score, player loses.</li>
+            </ul>
+            <a class="game-tutorial__close" href="#">CLOSE</a>
+        </div>
+
+        <div class="game-controls hide">
+            <h1 class="game-controls__title">How To Play</h1>
+            <ul class="game-controls__desc">
+                <li>Press Right Arrow to Move Right.</li>
+                <li>Press Left Arrow to Move Left.</li>
+                <li>Press Up Arrow to Jump.</li>
+                <li>Press Down Arrow to stand still.</li>
+                <li>Press R to throw fireball</li>
+                <li>Press Space to do a rolling attack</li>
+            </ul>
+            <a class="game-controls__close" href="#">CLOSE</a>
+        </div>
+
+        <div class="gameover-menu hide">
+            <div>
+                <h1 class="gameover-menu__title">GAME OVER!!!</h1>
+            </div>
+            <div>
+                <h2 class="gameover-menu__game-status"></h2>
+                <h3 class="gameover-menu__highScore"></h3>
+                <h3 class="gameover-menu__score">Score:</h3>
+            </div>
+            <a id="restart" href="#">RESTART</a>
+        </div>
+        <h1 class="loading hide">Loading</h1>
+
+        <canvas id="canvas1"> </canvas>
+        <img id="player" src="assests/images/sonic2.png" />
+        <img id="player1" src="assests/images/spin.png" />
+        <img id="layer4" src="assests/images/ghostBackground.jpg" />
+        <img id="layer5" src="assests/images/layer-10.png" />
+        <img id="flying_ghost" src="assests/images/enemy_ghost_3.png" />
+        <img id="ghost_zombie" src="assests/images/walking_zombie.png" />
+        <img id="ghost_spider_big" src="assests/images/enemy_spider_big.png" />
+        <img id="ground_zombie" src="assests/images/enemy_hand.png" />
+        <img id="ghost_black" src="assests/images/enemy_ghost_red1.png" />
+        <img id="fire" src="assests/images/fire.png" />
+        <img id="collisionAnimation" src="assests/images/boom.png" />
+        <img id="fireball" src="assests/images/fireball (1).png" />
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

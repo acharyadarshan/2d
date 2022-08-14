@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assests/images/background.jpg);
+}
+
+#canvas1,
+.start-menu,
+.gameover-menu,
+.game-tutorial,
+.game-controls {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Creepster", cursive;
+}
+
+#player,
+#player1,
+#layer1,
+#layer2,
+#layer3,
+#layer4,
+#layer5,
+#flying_ghost,
+#ghost_zombie,
+#ghost_spider_big,
+#ghost_black,
+#fire,
+#collisionAnimation,
+#lives,
+#fireball,
+#ground_zombie {
+    display: none;
+}
+
+.start-menu,
+.gameover-menu,
+.game-tutorial,
+.game-controls {
+    width: 1500px;
+    height: 500px;
+    background-color: red;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-image: url(./assests/images/ghostBackground.jpg);
+}
+
+.start-menu__title {
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+.game-tutorial,
+.game-controls {
+    z-index: 3;
+    background-image: url(./assests/images/ghostBackground.jpg);
+}
+
+.game-tutorial__title,
+.game-controls__title {
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+
+.gameover-menu__title,
+.gameover-menu__game-status {
+    font-size: 50px;
+}
+.game-tutorial ul,
+.game-controls ul {
+    list-style-type: none;
+}
+
+.game-tutorial li,
+.game-controls li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.game-tutorial__close,
+#start-menu__play,
+#start-menu__description,
+#start-menu__controls,
+.game-controls__close,
+#restart {
+    padding: 10px 25px;
+    background-color: white;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.game-tutorial__close:hover,
+#start-menu__play:hover,
+#start-menu__description:hover,
+#restart:hover,
+.game-controls__close:hover,
+#start-menu__controls:hover {
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+}
+
+.game-tutorial__desc,
+.game-controls__desc {
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+.gameover-menu__title,
+.gameover-menu__game-status,
+.gameover-menu__score,
+.gameover-menu__highScore {
+    margin-bottom: 20px;
+}
