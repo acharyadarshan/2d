@@ -25,9 +25,9 @@ export class UI {
 
         //highscore
         if (this.game.score > this.game.highScore) {
-            context.fillText("HIGH SCORE: " + this.game.score, 700, 50);
+            context.fillText("HIGH SCORE: " + this.game.score, 600, 40);
         } else {
-            context.fillText("HIGH SCORE: " + this.game.highScore, 700, 50);
+            context.fillText("HIGH SCORE: " + this.game.highScore, 600, 52);
         }
 
         //timer
