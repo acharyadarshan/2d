@@ -183,8 +183,8 @@ export class Attacking extends State {
             input.includes("ArrowUp") &&
             this.game.player.onGround()
         ) {
-            this.game.player.vy -= 27;
         } else if (input.includes("ArrowDown") && !this.game.player.onGround()) {
+            this.game.player.vy -= 27;
             this.game.player.setState(states.DIVING, 0);
         }
     }
