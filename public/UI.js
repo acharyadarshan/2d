@@ -83,6 +83,7 @@ export class UI {
 
                 this.game.gameOverDiv.classList.remove("hide");
                 this.game.sound.pause();
+                // initiate the game state to begining of the frame
                 GAMEOVER.play();
             }
         }
