@@ -19,7 +19,7 @@ export class FloatingScore {
         this.x += this.targetX - this.x * 0.03;
         this.y += this.targetY - this.y * 0.03;
         this.timer++;
-        if (this.timer > 200) this.checkForRemove = true;
+        if (this.timer > 212) this.checkForRemove = true;
     }
 
     draw(context) {
