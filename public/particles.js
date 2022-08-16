@@ -87,10 +87,11 @@ export class Fire extends Particle {
     draw(context) {
         //saves canvas state
         context.save();
-        //moves canvas top left position to fire particles x and  y positions.
-        context.translate(this.x, this.y);
+
         //rotates the canvas
         context.rotate(this.angle);
+        //moves canvas top left position to fire particles x and  y positions.
+        context.translate(this.x, this.y);
 
         context.drawImage(
             this.image,
