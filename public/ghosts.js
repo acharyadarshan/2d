@@ -100,7 +100,7 @@ export class GroundZombie extends Ghost {
     constructor(game) {
         super();
         this.game = game;
-        this.width = 55.6;
+        this.width = 58;
         this.height = 80;
         this.x = this.game.width;
         this.finalyY = this.game.height - this.height - this.game.groundMargin;
